@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Baro.Views.Question"
+             Title="Question">
+    <Shell.TitleView>
+        <FlexLayout JustifyContent="End" AlignItems="Center">
+            <Label
+          Text="Questions"
+          FontFamily="Poppins-Bold"
+          TextColor="White"
+          Padding="20, 0"
+          VerticalTextAlignment="Center"
+          VerticalOptions="Center"
+          HorizontalTextAlignment="Center"
+          HorizontalOptions="Center"
+          HeightRequest="50"
+          FontSize="20" 
+          CharacterSpacing="3"/>
+        </FlexLayout>
+    </Shell.TitleView>
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="0,1">
+            <GradientStop Color="DarkSlateBlue"
+                          Offset="0.1" />
+
+            <GradientStop Color="SkyBlue"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <AbsoluteLayout>
+        <ProgressBar ScaleY="2" ProgressColor="SkyBlue" Progress="0" HeightRequest="20" AbsoluteLayout.LayoutBounds="0, 0.019, 1, 20" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" Margin="40" x:Name="pg"/>
+        <CarouselView x:Name="corv" PeekAreaInsets="0" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Margin="0,50" IsSwipeEnabled="False">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+
+                        <VerticalStackLayout Padding="20" Spacing="30">
+                            <Label
+                           Text="{Binding question}"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           TextTransform="Uppercase"
+                           FontFamily="Poppins-Bold"
+                           CharacterSpacing="0"
+                           FontSize="Medium"/>
+                        <VerticalStackLayout >
+                                <Button Text="{Binding answers[0]}" TextColor="DarkSlateBlue" BackgroundColor="SkyBlue" CornerRadius="15" FontSize="Small" Margin="10" Clicked="Button_Clicked"/>
+                                <Button Text="{Binding answers[1]}" TextColor="DarkSlateBlue" BackgroundColor="SkyBlue" CornerRadius="15" FontSize="Small" Margin="10" Clicked="Button_Clicked"/>
+                                <Button Text="{Binding answers[2]}" TextColor="DarkSlateBlue" BackgroundColor="SkyBlue" CornerRadius="15" FontSize="Small" Margin="10" Clicked="Button_Clicked"/>
+                                <Button Text="{Binding answers[3]}" TextColor="DarkSlateBlue" BackgroundColor="SkyBlue" CornerRadius="15" FontSize="Small" Margin="10" Clicked="Button_Clicked"/>
+                        </VerticalStackLayout>
+                    </VerticalStackLayout>
+                        
+                   
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+    </AbsoluteLayout>
+</ContentPage>

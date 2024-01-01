@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Baro.Views.Invite"
+             >
+    <Shell.TitleView>
+        <FlexLayout JustifyContent="End" AlignItems="Center">
+            <Label
+          Text="Invite A Friend"
+          FontFamily="Poppins-Bold"
+          TextColor="White"
+          Padding="20, 0"
+          VerticalTextAlignment="Center"
+          VerticalOptions="Center"
+          HorizontalTextAlignment="Center"
+          HorizontalOptions="Center"
+          HeightRequest="50"
+          FontSize="20" 
+          CharacterSpacing="3"/>
+        </FlexLayout>
+    </Shell.TitleView>
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="0,1">
+            <GradientStop Color="DarkSlateBlue"
+                          Offset="0.1" />
+
+            <GradientStop Color="SkyBlue"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <AbsoluteLayout>
+        <VerticalStackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="10" AbsoluteLayout.LayoutBounds="0.5,0.5" AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Frame CornerRadius="110" BorderColor="White" BackgroundColor="Transparent">
+                <Image Source="invite.svg" WidthRequest="100" HeightRequest="100"/>
+            </Frame>
+            <Label 
+            Text="The more, the merrier! Share the fun with a Friend!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontFamily="Poppins-Bold"
+            FontSize="Small"/>
+
+        </VerticalStackLayout>
+        <Button Text="Invite a Friend" Clicked="Button_Clicked" CornerRadius="10" BackgroundColor="DarkSlateBlue" TextColor="SkyBlue" VerticalOptions="EndAndExpand" AbsoluteLayout.LayoutBounds="0.5,0.97,0.9, 100" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+    </AbsoluteLayout>
+</ContentPage>

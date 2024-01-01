@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Baro.Views.Result"
+             Title="Result">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="1,1">
+            <GradientStop Color="DarkSlateBlue"
+                          Offset="0.1" />
+            <GradientStop Color="SkyBlue"
+                          Offset="0.4" />
+            <GradientStop Color="DarkSlateBlue"
+                          Offset="0.6" />
+            <GradientStop Color="DarkSlateBlue"
+                          Offset="0.8" />
+            <GradientStop Color="SkyBlue"
+                          Offset="1.0" />
+
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <AbsoluteLayout>
+        <Border StrokeThickness="0" BackgroundColor="SkyBlue" StrokeShape="RoundRectangle 70,70,70,70" AbsoluteLayout.LayoutBounds=".5,.5, 0.9, .277" AbsoluteLayout.LayoutFlags="All" Opacity=".975">
+            <VerticalStackLayout Spacing="10" VerticalOptions="Center" Padding="20">
+                
+                <Label 
+            Text=""
+            VerticalOptions="Center" 
+            FontFamily="Poppins-Bold"
+            TextColor="DarkSlateBlue"
+            HorizontalOptions="Center" x:Name="ltext" />
+                <Label 
+            Text=""
+            VerticalOptions="Center" 
+            FontFamily="Poppins-Bold"
+            TextColor="DarkSlateBlue"
+            FontSize="25"
+            HorizontalOptions="Center" x:Name="lpercent" />
+                <ProgressBar x:Name="pg" ProgressColor="DarkSlateBlue" ScaleY="1.8"/>
+                <Button Text="OK" BackgroundColor="DarkSlateBlue" CornerRadius="25" TextColor="SkyBlue" Clicked="Button_Clicked" FontFamily="Poppins-Bold" TextTransform="Uppercase" Margin="0,20,0,0" CharacterSpacing="3" WidthRequest="300"/>
+
+            </VerticalStackLayout>
+            
+        </Border>
+    </AbsoluteLayout>
+</ContentPage>

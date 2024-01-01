@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Baro.Views.Profile"
+            >
+    <Shell.TitleView>
+        <FlexLayout JustifyContent="End" AlignItems="Center">
+            <Label
+          Text="Profile"
+          FontFamily="Poppins-Bold"
+          TextColor="White"
+          Padding="20, 0"
+          VerticalTextAlignment="Center"
+          VerticalOptions="Center"
+          HorizontalTextAlignment="Center"
+          HorizontalOptions="Center"
+          HeightRequest="50"
+          FontSize="20" 
+          CharacterSpacing="3"/>
+        </FlexLayout>
+    </Shell.TitleView>
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="0,1">
+            <GradientStop Color="DarkSlateBlue"
+                          Offset="0.1" />
+
+            <GradientStop Color="SkyBlue"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <AbsoluteLayout>
+        <Border BackgroundColor="DarkSlateBlue" Stroke="White" StrokeThickness="2" StrokeShape="RoundRectangle 0,0,300,300" AbsoluteLayout.LayoutBounds="0,-0.2,1,.5" AbsoluteLayout.LayoutFlags="All" ZIndex="-1" Opacity=".8"/>
+        <VerticalStackLayout AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" Margin="0,50">
+            <Image Source="profile.png" WidthRequest="150" Aspect="Fill"/>
+        </VerticalStackLayout>
+        <Border  Stroke="Transparent" StrokeThickness="1" StrokeShape="RoundRectangle 35,35,35,35" AbsoluteLayout.LayoutBounds=".5,.4,.9,.2" AbsoluteLayout.LayoutFlags="All" Padding="20">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="0,1">
+                    <GradientStop Color="DarkSlateBlue"
+                          Offset="-0.3" />
+                    <GradientStop Color="DarkSlateBlue"
+                          Offset="0.3" />
+                    <GradientStop Color="SkyBlue"
+                          Offset="4.0" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid RowDefinitions="*, *, *" ColumnDefinitions="*, *, *">
+                <Label 
+            Text="Personal Information"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            x:Name="pname"
+            FontFamily="Poppins-Bold"
+            FontSize="Medium"
+                    Grid.ColumnSpan="2"
+            />
+                <ImageButton Clicked="ImageButton_Clicked" Source="memo_pencil.png" WidthRequest="20" HorizontalOptions="End" Grid.Column="2" Margin="20,0"/>
+                <Border
+                    Background="SkyBlue"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    Grid.Row="1"
+                    StrokeShape="RoundRectangle 70,70,70,70"
+                    Stroke="Transparent">
+                <Label
+                    Text ="Email"
+                            
+                    TextColor="DarkSlateBlue"
+                    Padding="20,0"
+                    FontSize="Micro"
+                    FontFamily="Poppins-Bold"
+
+                    />
+                </Border>
+                <Border
+                    Background="SkyBlue"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    Grid.Row="2"
+                    StrokeShape="RoundRectangle 70,70,70,70"
+                    Stroke="Transparent">
+                <Label
+                    Text ="Name"
+                            
+                    TextColor="DarkSlateBlue"
+                    Padding="20,0"
+                    FontSize="Micro"
+                    FontFamily="Poppins-Bold"
+
+                    />
+                </Border>
+
+                <Label
+                    x:Name="emailEdit"
+                                        Grid.Column="1"
+
+                    Text =""
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                   
+                                VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+                    BackgroundColor="Transparent"
+                    Padding="20,0"
+                    FontSize="Micro"
+                    />
+                <Label
+                    x:Name="nameEdit"
+                    Text =""
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="2"
+                                VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+                    BackgroundColor="Transparent"
+                    Padding="20,0"
+                    FontSize="Micro"
+                    />
+            </Grid>
+        </Border>
+    </AbsoluteLayout>
+</ContentPage>

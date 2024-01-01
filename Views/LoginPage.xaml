@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Baro.Views.LoginPage"
+            >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="PlaceholderColor" Value="SkyBlue"/>
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="TextColor" Value="SkyBlue"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="WidthRequest" Value="250"/>
+                <Setter Property="CharacterSpacing" Value="3"/>
+                
+            </Style>
+            <Style TargetType="Border">
+
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="1,1">
+            <GradientStop Color="DarkSlateBlue"
+                          Offset="0.1" />
+            <GradientStop Color="SkyBlue"
+                          Offset="0.4" />
+            <GradientStop Color="DarkSlateBlue"
+                          Offset="0.6" />
+            <GradientStop Color="DarkSlateBlue"
+                          Offset="0.8" />
+            <GradientStop Color="SkyBlue"
+                          Offset="1.0" />
+
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ScrollView>
+    <AbsoluteLayout>
+        <VerticalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Spacing="50" Margin="0,50,0,0" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+
+            <VerticalStackLayout x:Name="LoginForm" Spacing="50">
+            <FlexLayout Direction="Column" JustifyContent="SpaceEvenly" AlignItems="Center">
+
+                        <Label 
+                TextColor="SkyBlue"
+                FontSize="Title"
+                FontFamily="Poppins-Bold"
+                TextTransform="Uppercase"
+                >
+                            Baro
+                        </Label>
+                    <Image 
+            Source="iconvo" WidthRequest="300" HeightRequest="300"/>
+
+                        <Label 
+                Text="Learn Anything, Anytime - Login to Learn"
+                TextColor="DarkSlateBlue"
+                FontSize="Small"
+                FontFamily="Poppins-Bold"
+                />
+            </FlexLayout>
+            <VerticalStackLayout Spacing="10" Margin="0,30">
+
+                    <Border  Stroke="SkyBlue" StrokeShape="RoundRectangle 15,15,15,15" Padding="20, 0" >
+                            <HorizontalStackLayout Spacing="18">
+                                <Image Source="mail.png" WidthRequest="20" />
+                                <Entry VerticalOptions="Center"  Placeholder="Email" x:Name="LgEmail"/>
+                            </HorizontalStackLayout>
+                        </Border>
+                    <Border Stroke="SkyBlue" StrokeShape="RoundRectangle 15,15,15,15" Padding="20, 0">
+                            <HorizontalStackLayout Spacing="18">
+                                <Image Source="lock.png" WidthRequest="20" />
+                                <Entry VerticalOptions="Center" Placeholder="Password" x:Name="LgPass" IsPassword="True"/>
+                            </HorizontalStackLayout>
+                        </Border>
+                        <Button Text="Login" BackgroundColor="SkyBlue" TextColor="DarkSlateBlue" CornerRadius="15" FontFamily="Poppins-Bold" TextTransform="Uppercase" CharacterSpacing="3" Clicked="LogUser" Margin="0,20,0,0"/>
+
+                </VerticalStackLayout>
+        </VerticalStackLayout>
+        <VerticalStackLayout IsVisible="False" x:Name="RegisterForm" Spacing="50">
+            <FlexLayout Direction="Column" JustifyContent="Start" AlignItems="Center">
+
+                        <Label 
+               TextColor="SkyBlue"
+               FontSize="Title"
+               FontFamily="Poppins-Bold"
+                   TextTransform="Uppercase"
+               >
+                            Baro
+                        </Label>
+                        <Image 
+            Source="iconvo.png" WidthRequest="300" Aspect="AspectFill"/>
+ 
+                        <Label 
+                Text="Sign Up to Learn, Unlock Your Potential"
+                TextColor="DarkSlateBlue"
+                FontSize="Small"
+                FontFamily="Poppins-Bold"
+                />
+                </FlexLayout>
+                    <VerticalStackLayout Spacing="10" Margin="0,30">
+
+
+                    <Border  Stroke="SkyBlue" StrokeShape="RoundRectangle 15,15,15,15" Padding="20, 0" >
+                            <HorizontalStackLayout Spacing="18">
+                                <Image Source="mail.png" WidthRequest="20" />
+                                <Entry VerticalOptions="Center"  Placeholder="Email" x:Name="RgEmail"/>
+                            </HorizontalStackLayout>
+                        </Border>
+                    <Border  Stroke="SkyBlue" StrokeShape="RoundRectangle 15,15,15,15" Padding="20, 0"  >
+                            <HorizontalStackLayout Spacing="18">
+                                <Image Source="profile_blue.png" WidthRequest="20" />
+                                <Entry VerticalOptions="Center" HorizontalOptions="Fill" Placeholder="Name" x:Name="RgName"/>
+                            </HorizontalStackLayout>
+                        </Border>
+                    <Border  Stroke="SkyBlue" StrokeShape="RoundRectangle 15,15,15,15" Padding="20, 0"  >
+                            <HorizontalStackLayout Spacing="18">
+                                <Image Source="lock.png" WidthRequest="20" />
+                                <Entry VerticalOptions="Center" HorizontalOptions="Fill" Placeholder="Password" IsPassword="True" x:Name="RgPass"/>
+                            </HorizontalStackLayout>
+                        </Border>
+                    <Border Stroke="SkyBlue" StrokeShape="RoundRectangle 15,15,15,15" Padding="20, 0" >
+                            <HorizontalStackLayout Spacing="18">
+                                <Image Source="lock.png" WidthRequest="20" />
+                                <Entry VerticalOptions="Center" HorizontalOptions="Fill" Placeholder="Re-Enter Your Password" IsPassword="True" x:Name="RgRePass"/>
+                            </HorizontalStackLayout>
+                        </Border>
+                        <Button Text="Sign-up" BackgroundColor="SkyBlue" CornerRadius="15" TextColor="DarkSlateBlue" Clicked="RegisterUser" FontFamily="Poppins-Bold" TextTransform="Uppercase" Margin="0,20,0,0"/>
+
+                </VerticalStackLayout>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+            <HorizontalStackLayout AbsoluteLayout.LayoutBounds="0, 0.97, 1, 50" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional" HorizontalOptions="Center" x:Name="LoginText">
+                <ImageButton Source="arrow_rt.png" WidthRequest="30" Clicked="Register"/>
+                <Button Text="Don't Have an account? Sign up here" TextColor="SkyBlue" BackgroundColor="Transparent" FontSize="Small" Clicked="Register">
+                    <Button.Shadow>
+                        <Shadow Brush="DarkSlateBlue" />
+                    </Button.Shadow>
+
+                </Button>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout AbsoluteLayout.LayoutBounds="0, .58, 1, 50" AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional" HorizontalOptions="Center" IsVisible="False" x:Name="RegisterText">
+                <ImageButton Source="arrow_rt.png" WidthRequest="30" Clicked="Login"/>
+                <Button Text="Have an account? Log in here" TextColor="SkyBlue" BackgroundColor="Transparent" FontSize="Small" Clicked="Login">
+                    <Button.Shadow>
+                        <Shadow Brush="DarkSlateBlue" />
+                    </Button.Shadow>
+
+                </Button>
+            </HorizontalStackLayout>
+        </AbsoluteLayout>
+    </ScrollView>
+</ContentPage>

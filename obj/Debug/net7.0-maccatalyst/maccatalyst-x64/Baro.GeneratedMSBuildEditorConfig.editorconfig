@@ -1,0 +1,113 @@
+is_global = true
+build_property.TargetFramework = net7.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Baro
+build_property.ProjectDir = C:\Users\yaser\source\repos\Baro\Baro\
+
+[C:/Users/yaser/source/repos/Baro/Baro/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Baro.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/yaser/source/repos/Baro/Baro/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Baro.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/yaser/source/repos/Baro/Baro/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Baro.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/yaser/source/repos/Baro/Baro/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Baro.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/yaser/source/repos/Baro/Baro/Views/Assessment.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Baro.Views.Assessment.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Assessment.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Assessment.xaml
+
+[C:/Users/yaser/source/repos/Baro/Baro/Views/Community.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Baro.Views.Community.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Community.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Community.xaml
+
+[C:/Users/yaser/source/repos/Baro/Baro/Views/Course.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Baro.Views.Course.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Course.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Course.xaml
+
+[C:/Users/yaser/source/repos/Baro/Baro/Views/CourseLessons.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Baro.Views.CourseLessons.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CourseLessons.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CourseLessons.xaml
+
+[C:/Users/yaser/source/repos/Baro/Baro/Views/Courses.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Baro.Views.Courses.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Courses.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Courses.xaml
+
+[C:/Users/yaser/source/repos/Baro/Baro/Views/EditPersonal.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Baro.Views.EditPersonal.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EditPersonal.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EditPersonal.xaml
+
+[C:/Users/yaser/source/repos/Baro/Baro/Views/Home.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Baro.Views.Home.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Home.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Home.xaml
+
+[C:/Users/yaser/source/repos/Baro/Baro/Views/Invite.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Baro.Views.Invite.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Invite.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Invite.xaml
+
+[C:/Users/yaser/source/repos/Baro/Baro/Views/Lesson.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Baro.Views.Lesson.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Lesson.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Lesson.xaml
+
+[C:/Users/yaser/source/repos/Baro/Baro/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Baro.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[C:/Users/yaser/source/repos/Baro/Baro/Views/Profile.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Baro.Views.Profile.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Profile.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Profile.xaml
+
+[C:/Users/yaser/source/repos/Baro/Baro/Views/Question.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Baro.Views.Question.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Question.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Question.xaml
+
+[C:/Users/yaser/source/repos/Baro/Baro/Views/Result.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Baro.Views.Result.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Result.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Result.xaml

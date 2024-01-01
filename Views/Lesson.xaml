@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Baro.Views.Lesson"
+             Title="Lesson">
+    <Shell.TitleView>
+        <FlexLayout JustifyContent="End" AlignItems="Center">
+            <Label
+          Text=""
+          FontFamily="Poppins-Bold"
+          TextColor="White"
+          Padding="20, 0"
+          VerticalTextAlignment="Center"
+          VerticalOptions="Center"
+          HorizontalTextAlignment="Center"
+          HorizontalOptions="Center"
+          HeightRequest="50"
+          FontSize="20" 
+          CharacterSpacing="3"/>
+        </FlexLayout>
+    </Shell.TitleView>
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="0,1">
+            <GradientStop Color="DarkSlateBlue"
+                          Offset="0.1" />
+
+            <GradientStop Color="SkyBlue"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ScrollView>
+    <VerticalStackLayout Padding="10" Spacing="20">
+        <Label x:Name="title" HorizontalOptions="Center" CharacterSpacing="3" Text="{Binding title}" FontFamily="Poppins-Bold" FontSize="Medium"/>
+        <Label 
+            Text="{Binding content}"
+            VerticalOptions="Start" 
+            TextType="Html"
+            HorizontalOptions="Start" />
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

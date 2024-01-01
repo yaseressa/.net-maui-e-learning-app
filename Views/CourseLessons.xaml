@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Baro.Views.CourseLessons"
+             Title="CourseLessons">
+    <Shell.TitleView>
+        <FlexLayout JustifyContent="End" AlignItems="Center">
+            <Label
+          Text=""
+          FontFamily="Poppins-Bold"
+          TextColor="White"
+          Padding="20, 0"
+          VerticalTextAlignment="Center"
+          VerticalOptions="Center"
+          HorizontalTextAlignment="Center"
+          HorizontalOptions="Center"
+          HeightRequest="50"
+          FontSize="20" 
+          CharacterSpacing="3"/>
+        </FlexLayout>
+    </Shell.TitleView>
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="0,1">
+            <GradientStop Color="DarkSlateBlue"
+                          Offset="0.1" />
+
+            <GradientStop Color="SkyBlue"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <CollectionView x:Name="cv" SelectionMode="Single" ItemsLayout="VerticalGrid, 2" SelectionChanged="cv_SelectionChanged" VerticalScrollBarVisibility="Always">
+        <CollectionView.Header>
+            <VerticalStackLayout BackgroundColor="Transparent" Spacing="10" Opacity="0.9" Padding="5" Margin="0,20,0,10">
+                <Image
+                    x:Name="img"
+                               HorizontalOptions="Center"
+                               WidthRequest="90"
+                                
+                             />
+                <Label Text="" HorizontalOptions="Center" CharacterSpacing="3" x:Name="title" FontFamily="Poppins-Bold" FontSize="Medium"/>
+            </VerticalStackLayout>
+        </CollectionView.Header>
+        <CollectionView.EmptyViewTemplate>
+            <DataTemplate>
+            <Label Text="Unfortunately there are no courses currently available :(" CharacterSpacing="3" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Medium"/>
+            </DataTemplate>
+        </CollectionView.EmptyViewTemplate>
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Border BackgroundColor="DarkSlateBlue" Stroke="Transparent" StrokeThickness="0" StrokeShape="RoundRectangle 20,20,20,20" ZIndex="-1" Opacity="0.9" Margin="5,20,5,0" >
+                    <VerticalStackLayout Spacing="40">
+                        <Border  StrokeThickness="0" StrokeShape="RoundRectangle 15,15,5,5" Opacity="1" Padding="40, 20">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0.8,0"
+                             EndPoint="1,1">
+                                    <GradientStop Color="DarkSlateBlue"
+                          Offset="0.1" />
+
+                                    <GradientStop Color="SkyBlue"
+                          Offset="1.0" />
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <Border.Shadow>
+                                <Shadow Brush="SkyBlue"
+                Offset="20,20"
+                Radius="40"
+                Opacity="0.8" />
+                            </Border.Shadow>
+                            <VerticalStackLayout>
+                                <Label
+                           Text="{Binding lessonId}"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           FontFamily="Poppins-Bold"
+                           CharacterSpacing="3"
+                           FontSize="Medium"
+                           TextColor="SkyBlue" />
+                                <Label
+                           Text="{Binding title}"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                                    HorizontalTextAlignment="Center"
+                           FontAttributes="Bold"
+                           CharacterSpacing="3"
+                           FontSize="Micro"/>
+                            </VerticalStackLayout>
+                        </Border>
+
+                    </VerticalStackLayout>
+                </Border>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+
+</ContentPage>
